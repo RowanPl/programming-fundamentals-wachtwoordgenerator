@@ -1,6 +1,26 @@
 # Python Wachtwoordgenerator
 
-Instructies
+## Inleiding:
+
+Weet je hoe belangrijk een goed wachtwoord is?
+
+Nee, Nou als een hacker je probeert te hacken doormiddel van een bruteforce (alle mogelijkheden proberen die er zijn) dan kan dat varieren van direct tot 63 duizend jaar...
+
+|   | 8 karakters | 10 karakters| 12 karakters | 
+|---|---|---|---|
+| Alleen kleine letters  |  direct | direct   | een paar weken   | 
+| + 1 hoofdletter  | half uurtje | 1 maand | 5 jaar| 
+| + 1 nummer  | 1 uur  | 6 jaar  | 2 duizend jaar  |
+| + 1 symbool | 1 dag | 50 jaar | 63 duizend jaar |
+
+Daarnaast wordt dit getal iedere 2 jaar gehalveerd omdat er telkens betere computers bestaan.
+
+Check hier je eigen wachtwoord: [Password Strength Testing Tool]( https://bitwarden.com/password-strength/)
+
+Het is daarom goed om een sterk wachtwoord te kiezen die je eigenlijk om de 2 jaar moet aanpassen. Maar elke keer weer een goed wachtwoord bedenken kost jou heel veel denkwerk. Maar gelukkig kan jij als developer er een scriptje voor schrijven.
+
+## Instructies
+---
 
 De applicatie zal je 3 vragen stellen:
 
