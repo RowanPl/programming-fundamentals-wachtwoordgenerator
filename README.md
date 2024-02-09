@@ -1,10 +1,11 @@
+
 # Python Wachtwoordgenerator
 
 ## Inleiding:
 
 Weet je hoe belangrijk een goed wachtwoord is?
 
-Nee, Nou als een hacker je probeert te hacken doormiddel van een bruteforce (alle mogelijkheden proberen die er zijn) dan kan dat varieren van direct tot 63 duizend jaar...
+Nee, nou als een hacker je probeert te hacken door middel van een bruteforce (alle mogelijkheden proberen die er zijn) dan kan dat variëren van direct tot 63 duizend jaar...
 
 |   | 8 karakters | 10 karakters| 12 karakters | 
 |---|---|---|---|
@@ -19,6 +20,7 @@ Check hier je eigen wachtwoord: [Password Strength Testing Tool]( https://bitwar
 
 Het is daarom goed om een sterk wachtwoord te kiezen die je eigenlijk om de 2 jaar moet aanpassen. Maar elke keer weer een goed wachtwoord bedenken kost jou heel veel denkwerk. Maar gelukkig kan jij als developer er een scriptje voor schrijven.
 
+
 ## Instructies
 ---
 
@@ -28,11 +30,7 @@ De applicatie zal je 3 vragen stellen:
    2. Hoeveel symbolen wil je in je wachtwoord?
    3. Hoeveel nummers wil je in je wachtwoord?
 
-Het doel van de applicatie is om de invoer van de gebruiker te ontvangen en vervolgens een willekeurig wachtwoord te genereren. Gebruik de random module om dit te doen.
-<details>
-  <summary><i>Kom je er niet uit welke module je moet gebruiken?</i></summary>
-   :bulb: Gebruik de `random` module.
-</details>
+Het doel van de applicatie is om de invoer van de gebruiker te ontvangen en vervolgens een willekeurig wachtwoord te genereren.
 
 <details open> 
 <summary> <b> Eenvoudige Versie (Stap 1) </b> </summary>
@@ -49,7 +47,29 @@ dan zou het wachtwoord er als volgt uit kunnen zien:
 `qfIw)+393`
 
 Je ziet dat alle letters bij elkaar staan, alle symbolen bij elkaar, en alle nummers volgen elkaar ook op.
+
+
+* <details>
+  <summary>
+     <i>Kom je er niet uit welke module je moet gebruiken?</i>
+  </summary>
+   
+   * 💡Gebruik de `random` module.
+
+* <details>
+  <summary>
+     <i>Kom je er niet uit hoe je een willekeurig karakter aanspreekt?</i>
+  </summary>
+
+   * 💡In `random` zit een methode genaamd `choice`, hiermee kan je een willekeurig karakter aanspreken uit een array.
+ 
 </details>
+</details>
+</details>
+
+
+
+
 <details> 
 <summary> <b>Moeilijke Versie (Stap 2)</b> </summary>
   
@@ -59,8 +79,42 @@ Als je de eenvoudige versie hebt voltooid, kun je de moeilijke versie proberen. 
 
 Dus elke keer dat je een wachtwoord genereert, zijn de posities van de symbolen, cijfers en letters anders.
  
-  <details>
-    <summary><i>Kom je er niet uit?</i></summary>
-     :bulb: Bekijk de verschillende methoden die de `random` module biedt.
-  </details>
+<details>
+    <summary><i>Weet je niet wat je nodig hebt?</i></summary>
+     je hebt het volgende nodig:
+
+     1 list
+     3 for-in-range loops
+
 </details>
+ <details>
+  <summary>
+     <i>Kom je er niet uit hoe je iets aan een lijst toevoegt?</i>
+  </summary>
+
+   * 💡Als je de naam van de lijst gebruikt en daar `.append(gegevens die je wilt toevoegen)` bij gebruikt dan wordt het in je lijst toegevoegd. 
+</details>
+
+<details>
+  
+  <summary>
+     <i>Kom je er niet uit hoe je een lijst door elkaar husselt?</i>
+  </summary>
+
+   * 💡In `random` zit een methode genaamd `shuffle`, hiermee kan je alles binnen de lijst door elkaar husselen.
+
+</details>
+
+<details>
+  <summary>
+     <i>Kom je er niet uit hoe je een lijst aan elkaar plakt?</i>
+  </summary>
+
+   * 💡Als je een print functie gebruikt met als inhoud `"".join` en dan de lijst dan voegt hij het aan elkaar. Kijk nu eens wat er gebeurt als je `"-".join` doet. 
+
+</details>
+
+</details>
+</details>
+
+
